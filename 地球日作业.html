@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>地球日焦点图-Flex</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .banner {
+            width: 100%;
+            max-width: 1200px;
+            margin: 50px auto;
+            position: relative;
+          
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+
+    
+        .banner-main {
+            width: 100%;
+            display: block;
+        }
+
+  
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            z-index: 10;
+        }
+
+  
+        .arrow-left {
+            left: 40px;
+        }
+
+  
+        .arrow-right {
+            right: 40px;
+        }
+
+     
+        .dots {
+            position: absolute;
+            bottom: 35px;
+            left: 50%;
+            transform: translateX(-50%);
+           
+            display: flex;
+            gap: 15px; 
+            align-items: center;
+        }
+
+      
+        .dot {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+      
+        <img src="images/arrow1.png" alt="上一张" class="arrow arrow-left">
+
+       
+        <img src="images/banner1.jpg" alt="地球日" class="banner-main">
+
+       
+        <img src="images/arrow2.png" alt="下一张" class="arrow arrow-right">
+
+       
+        <div class="dots">
+            <img src="images/point1.png" alt="圆点" class="dot">
+            <img src="images/point2.png" alt="当前页" class="dot"> 
+            <img src="images/point1.png" alt="圆点" class="dot">
+            <img src="images/point1.png" alt="圆点" class="dot">
+        </div>
+    </div>
+</body>
+</html>
